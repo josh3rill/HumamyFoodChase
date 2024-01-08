@@ -1,8 +1,8 @@
 <?php
 class FoodChase {
-//    private $gridSize = 10;              // Define the size of the game grid
-//    private $playerPos = [0, 0];         // Initialize the player's starting position
-//    private $foodPos = [];               // Initialize the food position
+    private $gridSize = 10;              // Define the size of the game grid
+    private $playerPos = [0, 0];         // Initialize the player's starting position
+    private $foodPos = [];               // Initialize the food position
     public function __construct() {
         // Constructor: Set the initial food position randomly within the grid
         $this->foodPos = [rand(0, $this->gridSize - 1), rand(0, $this->gridSize - 1)];
@@ -22,12 +22,12 @@ class FoodChase {
         // Keep player within grid boundaries (top/bottom)
         $this->playerPos[1] = max(0, min($this->playerPos[1], $this->gridSize - 1));
 
-         Check if the player's position matches the food's position
-        if ($this->playerPos == $this->foodPos) {
-            echo "Food caught! Generating new food...\n";
-            // Generate new random food position
-            $this->foodPos = [rand(0, $this->gridSize - 1), rand(0, $this->gridSize - 1)];
-
-        }
+//         Check if the player's position matches the food's position
+//        if ($this->playerPos == $this->foodPos) {
+//            echo "Food caught! Generating new food...\n";
+//            // Generate new random food position
+//            $this->foodPos = [rand(0, $this->gridSize - 1), rand(0, $this->gridSize - 1)];
+//
+//        }
     }
 }
