@@ -26,7 +26,7 @@ class FoodChase {
         if ($this->playerPos == $this->foodPos) {
             echo "Food caught! Generating new food...\n";
             // Generate new random food position
-            $this->foodPos = [rand(0, $this->gridSize - 1), rand(0, $this->gridSize - 1)];
+//            $this->foodPos = [rand(0, $this->gridSize - 1), rand(0, $this->gridSize - 1)];
 
         }
     }
