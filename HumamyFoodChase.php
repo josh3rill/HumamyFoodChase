@@ -3,7 +3,6 @@ class FoodChase {
     private $gridSize = 10;              // Define the size of the game grid
     private $playerPos = [0, 0];         // Initialize the player's starting position
     private $foodPos = [];               // Initialize the food position
-
     public function __construct() {
         // Constructor: Set the initial food position randomly within the grid
         $this->foodPos = [rand(0, $this->gridSize - 1), rand(0, $this->gridSize - 1)];
@@ -27,6 +26,7 @@ class FoodChase {
             echo "Food caught! Generating new food...\n";
             // Generate new random food position
             $this->foodPos = [rand(0, $this->gridSize - 1), rand(0, $this->gridSize - 1)];
+
         }
     }
 }
