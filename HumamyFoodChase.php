@@ -6,6 +6,7 @@ class FoodChase {
     public function __construct() {
         // Constructor: Set the initial food position randomly within the grid
         $this->foodPos = [rand(0, $this->gridSize - 1), rand(0, $this->gridSize - 1)];
+//        $this->foodPos = [rand(0, $this->gridSize - 1), rand(0, $this->gridSize - 1)];
     }
 
     public function movePlayer($direction) {
