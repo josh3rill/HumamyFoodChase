@@ -23,11 +23,11 @@ class FoodChase {
         $this->playerPos[1] = max(0, min($this->playerPos[1], $this->gridSize - 1));
 
         // Check if the player's position matches the food's position
-        if ($this->playerPos == $this->foodPos) {
-            echo "Food caught! Generating new food...\n";
-            // Generate new random food position
-            $this->foodPos = [rand(0, $this->gridSize - 1), rand(0, $this->gridSize - 1)];
-
-        }
+//        if ($this->playerPos == $this->foodPos) {
+//            echo "Food caught! Generating new food...\n";
+//            // Generate new random food position
+//            $this->foodPos = [rand(0, $this->gridSize - 1), rand(0, $this->gridSize - 1)];
+//
+//        }
     }
 }
