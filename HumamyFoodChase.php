@@ -20,7 +20,7 @@ class FoodChase {
 //        $this->playerPos[0] = max(0, min($this->playerPos[0], $this->gridSize - 1));
 
         // Keep player within grid boundaries (top/bottom)
-        $this->playerPos[1] = max(0, min($this->playerPos[1], $this->gridSize - 1));
+//        $this->playerPos[1] = max(0, min($this->playerPos[1], $this->gridSize - 1));
 
         // Check if the player's position matches the food's position
         if ($this->playerPos == $this->foodPos) {
