@@ -17,7 +17,7 @@ class FoodChase {
         $this->playerPos[1] += ($direction == 'down') ? 1 : (($direction == 'up') ? -1 : 0);
 
         // Keep player within grid boundaries (left/right)
-        $this->playerPos[0] = max(0, min($this->playerPos[0], $this->gridSize - 1));
+//        $this->playerPos[0] = max(0, min($this->playerPos[0], $this->gridSize - 1));
 
         // Keep player within grid boundaries (top/bottom)
         $this->playerPos[1] = max(0, min($this->playerPos[1], $this->gridSize - 1));
